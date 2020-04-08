@@ -1,0 +1,9 @@
+node{
+   stage('SCM Checkout '){
+     git 'https://github.com/nallurinav17/my-app'
+     }
+     stage('Compile-Package){
+      sh 'mvn package'
+      }
+    }
+   
